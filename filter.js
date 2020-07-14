@@ -31,11 +31,13 @@ request.onload = function() {
             
 
             let languages = item.languages;
-            console.log(languages);
+            let allLang = "";
 
             item.languages.forEach(item => {
-                console.log(item);
+                
+                allLang += `<button>${item}</button>`;
             });
+            console.log(allLang);
 
             let tools = item.tools;
 

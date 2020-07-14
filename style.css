@@ -1,26 +1,39 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #252525;
+  background: linear-gradient(45deg, hsl(180, 52%, 96%), hsl(180, 52%, 96%));
 }
-.filters-section .filters-wrap .block .wrap {
+.filters-section .filters-main {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.filters-section .filters-main .filters-wrap .block {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.filters-section .filters-main .filters-wrap .block .wrap {
   display: grid;
   grid-template-columns: 60px 1fr auto;
 }
-.filters-section .filters-wrap .block .wrap .left img {
+.filters-section .filters-main .filters-wrap .block .wrap .left img {
   max-width: 60px;
 }
-.filters-section .filters-wrap .block .wrap .mid {
+.filters-section .filters-main .filters-wrap .block .wrap .mid {
   padding-left: 15px;
 }
-.filters-section .filters-wrap .block .wrap .mid .top .company {
+.filters-section .filters-main .filters-wrap .block .wrap .mid .top .company {
   color: hsl(180, 29%, 50%);
   font-size: 14px;
 }
-.filters-section .filters-wrap .block .wrap .mid h6 {
-  color: hsl(180, 8%, 52%);
+.filters-section .filters-main .filters-wrap .block .wrap .mid h6 {
+  color: #252525;
   font-size: 16px;
-  margin: 8px 0;
+  margin: 2px 0;
 }
-.filters-section .filters-wrap .block .wrap .mid .bottom .span {
+.filters-section .filters-main .filters-wrap .block .wrap .mid .bottom span {
   color: #999;
-  font-size: 14px;
+  font-size: 12px;
 }

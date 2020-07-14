@@ -1,46 +1,63 @@
-
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #252525;
+    background: linear-gradient(45deg, hsl(180, 52%, 96%), hsl(180, 52%, 96%));
 }
-.filters-section{
-    .filters-wrap{
-        .block{
-            .wrap{
-                display: grid;
-                grid-template-columns: 60px 1fr auto;
-                .left{
-                    img{max-width:60px;}
-                }
-                .mid{
-                    padding-left:15px;
-                    .top{
-                        .company{
-                            color: hsl(180, 29%, 50%);
-                            font-size:14px;
-                        }
-                        .badges{
-                            .badge{
 
+.filters-section {
+    .filters-main {
+        max-width:1140px;
+        width:100%;
+        margin:0 auto;
+        padding:15px;
+        .filters-wrap {
+            .block {
+                background-color: white;
+                border-radius: 5px;
+                margin-bottom: 15px;
+
+                .wrap {
+                    display: grid;
+                    grid-template-columns: 60px 1fr auto;
+
+                    .left {
+                        img {
+                            max-width: 60px;
+                        }
+                    }
+
+                    .mid {
+                        padding-left: 15px;
+
+                        .top {
+                            .company {
+                                color: hsl(180, 29%, 50%);
+                                font-size: 14px;
+                            }
+
+                            .badges {
+                                .badge {}
+                            }
+                        }
+
+                        h6 {
+
+                            color: #252525;
+                            font-size: 16px;
+                            margin: 2px 0;
+                        }
+
+                        .bottom {
+                            span {
+                                color: #999;
+                                font-size: 12px;
                             }
                         }
                     }
-                    h6{
-                        
-                        color: hsl(180, 8%, 52%);
-                        font-size:16px;
-                        margin:8px 0;
-                    }
-                    .bottom{
-                        .span{
-                            color: #999;
-                            font-size:14px;
-                        }
-                    }
-                }
-                .right{
+
+                    .right {}
 
                 }
-
             }
         }
     }

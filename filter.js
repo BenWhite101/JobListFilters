@@ -1,4 +1,4 @@
-const filtersWrap = document.querySelector('filters-wrap');
+const filtersWrap = document.getElementById('filters-wrap');
 let requestURL = 'https://musing-dubinsky-734d44.netlify.app/data.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -95,8 +95,8 @@ request.onload = function() {
         
       }
 
-      pokeEl.innerHTML = main;
-      filtersWrap.appendChild(pokeEl);
+      filtersWrap.innerHTML = main;
+      //filtersWrap.appendChild(pokeEl);
 
   }
 

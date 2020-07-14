@@ -16,6 +16,9 @@ body {
   margin-bottom: 15px;
   padding: 25px;
 }
+.filters-section .filters-main .filters-wrap .block a {
+  text-decoration: unset;
+}
 .filters-section .filters-main .filters-wrap .block .wrap {
   display: grid;
   grid-template-columns: 60px 1fr auto;

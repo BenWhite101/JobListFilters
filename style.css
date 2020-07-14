@@ -56,3 +56,11 @@ body {
   color: #999;
   font-size: 12px;
 }
+.filters-section .filters-main .filters-wrap .block .wrap .right button {
+  background: hsl(180, 52%, 96%);
+  border: unset;
+  color: hsl(180, 29%, 50%);
+  padding: 8px 12px 4px 12px;
+  font-size: 16px;
+  margin-left: 10px;
+}

@@ -17,7 +17,7 @@ request.onload = function() {
     function populate(jsonObj){
         jsonObj.forEach(item => {
             /* START FOREACH */
-            
+            console.log(item.new);
             let id = item.id;
             let company = item.company;
             let logoUrl = item.logo;

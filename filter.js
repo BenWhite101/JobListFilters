@@ -24,14 +24,14 @@ request.onload = function() {
 
             let isNew = item.new;
             let isNewText = "";
-            if (isNew = true) {
-                let isNewText = "<span class='badge new'>New</span>";
+            if (isNew == true) {
+                isNewText = "<span class='badge new'>New</span>";
             }
 
             let isFeatured = item.featured;
             let isFeaturedText = "";
-            if (isFeatured = true) {
-                let isFeaturedText = "<span class='badge featured'>Featured</span>";
+            if (isFeatured == true) {
+                isFeaturedText = "<span class='badge featured'>Featured</span>";
             }
 
             let position = item.position;

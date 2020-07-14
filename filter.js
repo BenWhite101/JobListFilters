@@ -55,6 +55,7 @@ request.onload = function() {
              main += 
              `
                 <div class="block">
+                <a href="#">
                 <div class="wrap">
 
                     <div class="left">
@@ -80,6 +81,7 @@ request.onload = function() {
                     </div>
 
                 </div>
+                </a>
                 </div>
 
              `   

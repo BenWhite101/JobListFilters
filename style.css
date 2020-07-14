@@ -1,5 +1,6 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Spartan";
+  font-weight: 500;
   color: #252525;
   background: linear-gradient(45deg, hsl(180, 52%, 96%), hsl(180, 52%, 96%));
 }
@@ -30,11 +31,13 @@ body {
   font-size: 14px;
 }
 .filters-section .filters-main .filters-wrap .block .wrap .mid .top .badges .badge {
-  padding: 5px 10px;
+  padding: 3px 12px;
   color: white;
-  margin-left: 20px;
+  margin-left: 10px;
   background: hsl(180, 14%, 20%);
-  font-size: 14px;
+  font-size: 12px;
+  border-radius: 15px;
+  text-transform: uppercase;
 }
 .filters-section .filters-main .filters-wrap .block .wrap .mid .top .badges .new {
   background: hsl(180, 8%, 52%);
@@ -42,7 +45,8 @@ body {
 .filters-section .filters-main .filters-wrap .block .wrap .mid h6 {
   color: #252525;
   font-size: 16px;
-  margin: 2px 0;
+  margin: 6px 0 2px 0;
+  font-weight: bold;
 }
 .filters-section .filters-main .filters-wrap .block .wrap .mid .bottom span {
   color: #999;

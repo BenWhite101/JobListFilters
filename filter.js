@@ -28,9 +28,7 @@ request.onload = function() {
             let contract = item.contract;
             let location = item.location;
 
-            item.location.forEach(item => {
-                console.log(item);
-            });
+            console.log(location);
 
             let languages = item.languages;
             let tools = item.tools;

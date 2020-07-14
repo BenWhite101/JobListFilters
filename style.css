@@ -1,0 +1,26 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.filters-section .filters-wrap .block .wrap {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+}
+.filters-section .filters-wrap .block .wrap .left img {
+  max-width: 60px;
+}
+.filters-section .filters-wrap .block .wrap .mid {
+  padding-left: 15px;
+}
+.filters-section .filters-wrap .block .wrap .mid .top .company {
+  color: hsl(180, 29%, 50%);
+  font-size: 14px;
+}
+.filters-section .filters-wrap .block .wrap .mid h6 {
+  color: hsl(180, 8%, 52%);
+  font-size: 16px;
+  margin: 8px 0;
+}
+.filters-section .filters-wrap .block .wrap .mid .bottom .span {
+  color: #999;
+  font-size: 14px;
+}

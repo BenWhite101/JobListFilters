@@ -8,6 +8,8 @@ request.onload = function() {
     const jobsListJ = request.response;
     const jobsList = JSON.parse(jobsListJ);
 
+    const pokeEl = document.createElement('div');
+
     let main = "";
 
     populate(jobsList);
@@ -92,9 +94,10 @@ request.onload = function() {
 
         
       }
-      filtersWrap.appendChild(main);
 
-    
+      pokeEl.innerHTML = main;
+      filtersWrap.appendChild(pokeEl);
+
   }
 
   

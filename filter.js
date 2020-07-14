@@ -5,15 +5,15 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-    const jobsListJ = request.response;
-    const jobsList = JSON.parse(jobsListJ);
+    const jobsList = request.response;
+   
 
-    populateHeader(jobsList);
+    populate(jobsList);
     
   }
 
   function populate(jsonObj){
     jsonObj.array.forEach(item => {
-        console.log(item.id);
+        console.log(item.company);
     });
   }

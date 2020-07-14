@@ -84,6 +84,8 @@ request.onload = function() {
 
             /* END FOREACH */
         });
+
+        filtersWrap.html = main;
       }
     
   }

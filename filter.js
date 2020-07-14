@@ -23,15 +23,15 @@ request.onload = function() {
             let logoUrl = item.logo;
 
             let isNew = item.new;
-            let isNewText = ``;
+            let isNewText = "";
             if (isNew = true) {
-                let isNewText = `<span class="badge new">New</span>`
+                let isNewText = "<span class='badge new'>New</span>";
             }
 
             let isFeatured = item.featured;
-            let isFeaturedText = ``;
+            let isFeaturedText = "";
             if (isFeatured = true) {
-                let isFeaturedText = `<span class="badge featured">Featured</span>`
+                let isFeaturedText = "<span class='badge featured'>Featured</span>";
             }
 
             let position = item.position;

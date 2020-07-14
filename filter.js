@@ -92,7 +92,8 @@ request.onload = function() {
 
         
       }
-      filtersWrap.html = main;
+      filtersWrap.appendChild(main);
+
     
   }
 

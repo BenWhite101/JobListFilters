@@ -20,12 +20,12 @@ request.onload = function() {
             let isNew = item.new;
             if (isNew) {
                 let isNewText = `<span class="badge new">New</span>`
-            }
+            } else {let isNewText = "";}
 
             let isFeatured = item.featured;
             if (isFeatured) {
                 let isFeaturedText = `<span class="badge featured">Featured</span>`
-            }
+            } else {let isFeaturedText = "";}
 
             let position = item.position;
             let role = item.role;

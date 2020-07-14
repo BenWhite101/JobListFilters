@@ -11,7 +11,7 @@ request.onload = function() {
     populate(jobsList);
 
     function populate(jsonObj){
-        jsonObj.array.forEach(item => {
+        jsonObj.forEach(item => {
             console.log(item.company);
         });
       }

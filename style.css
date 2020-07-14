@@ -15,6 +15,7 @@ body {
   border-radius: 5px;
   margin-bottom: 15px;
   padding: 25px;
+  box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.35);
 }
 .filters-section .filters-main .filters-wrap .block a {
   text-decoration: unset;
@@ -34,7 +35,7 @@ body {
   font-size: 14px;
 }
 .filters-section .filters-main .filters-wrap .block .wrap .mid .top .badges .badge {
-  padding: 3px 12px;
+  padding: 6px 12px 3px 12px;
   color: white;
   margin-left: 10px;
   background: hsl(180, 14%, 20%);

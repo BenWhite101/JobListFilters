@@ -8,6 +8,8 @@ request.onload = function() {
     const jobsListJ = request.response;
     const jobsList = JSON.parse(jobsListJ);
 
+    let main = "";
+
     populate(jobsList);
 
     function populate(jsonObj){
@@ -46,7 +48,7 @@ request.onload = function() {
 
 
 
-            let main = "";
+            
 
              main += 
              `
@@ -88,8 +90,9 @@ request.onload = function() {
             /* END FOREACH */
         });
 
-        filtersWrap.html = main;
+        
       }
+      filtersWrap.html = main;
     
   }
 

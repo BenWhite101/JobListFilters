@@ -120,14 +120,22 @@ request.onload = function() {
 jQuery( document ).ready(function() {
  
 
-  // init Isotope
-var $grid = jQuery('.filters-wrap').isotope({
-    itemSelector: '.block'
-  });
-  // filter items on button click
-  jQuery('.buttons').on( 'click', 'button', function() {
-      console.log("click");
-    var filterValue = jQuery(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
+    var iso = new Isotope( '.filters-wrap', {
+        itemSelector: '.block'
+      });
+
+
+// bind filter button click
+var filtersElem = document.querySelector('.buttons');
+filtersElem.addEventListener( 'click', function( event ) {
+  // only work with buttons
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
+  }
+  var filterValue = event.target.getAttribute('data-filter');
+  // use matching filter function
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
+
 });

@@ -116,8 +116,7 @@ $( document ).ready(function() {
 
   // init Isotope
 var $grid = $('.filters-wrap').isotope({
-    itemSelector: '.block',
-    layoutMode: 'fitRows'
+    itemSelector: '.block'
   });
   // filter items on button click
   $('.buttons').on( 'click', 'button', function() {

@@ -120,7 +120,7 @@ var $grid = $('.filters-wrap').isotope({
     layoutMode: 'fitRows'
   });
   // filter items on button click
-  $('.right').on( 'click', 'button', function() {
+  $('.buttons').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });

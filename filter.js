@@ -48,7 +48,7 @@ request.onload = function() {
                 let allLang = "";
                 let blockClasses = "";
                 languages.forEach(item => {
-                    allLang += `<button>${item}</button>`;
+                    allLang += `<button data-filter=".${item}">${item}</button>`;
                     blockClasses += `${item} `;
                 });
                 

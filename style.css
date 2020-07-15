@@ -78,6 +78,7 @@ body {
   border-radius: 8px;
   font-family: Spartan;
   transition: all 0.3s ease;
+  outline: unset;
 }
 .filters-section .filters-main .filters-wrap .block .wrap .right button:hover {
   color: white;

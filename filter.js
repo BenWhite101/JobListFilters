@@ -117,17 +117,17 @@ request.onload = function() {
 
   
 
-$( document ).ready(function() {
+jQuery( document ).ready(function() {
  
 
   // init Isotope
-var $grid = $('.filters-wrap').isotope({
+var $grid = jQuery('.filters-wrap').isotope({
     itemSelector: '.block'
   });
   // filter items on button click
-  $('.buttons').on( 'click', 'button', function() {
+  jQuery('.buttons').on( 'click', 'button', function() {
       console.log("click");
-    var filterValue = $(this).attr('data-filter');
+    var filterValue = jQuery(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
 });

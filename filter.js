@@ -111,8 +111,17 @@ request.onload = function() {
 
  
 
+$( document ).ready(function() {
+ 
 
-  var iso = new Isotope( '.filter-wrap', {
+  // init Isotope
+var $grid = $('.filters-wrap').isotope({
     itemSelector: '.block',
     layoutMode: 'fitRows'
   });
+  // filter items on button click
+  $('button').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+});

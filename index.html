@@ -43,8 +43,10 @@
   <script>
       
 
-jQuery( document ).ready(function() {
+
  
+  setTimeout(() => {
+  
 
  // init Isotope
 var $grid = jQuery('.filters-wrap').isotope({
@@ -57,11 +59,13 @@ var $grid = jQuery('.filters-wrap').isotope({
    $grid.isotope({ filter: filterValue });
  });
 
+}, 500);
+
 
 
 
  
-});
+
 
   </script>
 </body>

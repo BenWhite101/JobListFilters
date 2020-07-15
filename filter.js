@@ -30,8 +30,10 @@ request.onload = function() {
 
             let isFeatured = item.featured;
             let isFeaturedText = "";
+            let featuredHtml = "";
             if (isFeatured == true) {
                 isFeaturedText = "<span class='badge featured'>Featured</span>";
+                featuredHtml = "featured";
             }
 
             let position = item.position;
@@ -54,7 +56,7 @@ request.onload = function() {
 
              main += 
              `
-                <div class="block ">
+                <div class="block ${featuredHtml}">
                 <a href="#">
                 <div class="wrap">
 

@@ -20,6 +20,9 @@ body {
   padding: 25px;
   box-shadow: 0px 10px 24px -8px rgba(0, 0, 0, 0.35);
 }
+.filters-section .filters-main .filters-wrap .block.featured {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
 .filters-section .filters-main .filters-wrap .block a {
   text-decoration: unset;
 }
@@ -65,7 +68,7 @@ body {
   align-items: center;
 }
 .filters-section .filters-main .filters-wrap .block .wrap .right button {
-  background: hsl(180, 52%, 96%);
+  background: hsl(180, 31%, 95%);
   border: unset;
   color: hsl(180, 29%, 50%);
   padding: 8px 12px 4px 12px;

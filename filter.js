@@ -120,6 +120,7 @@ var $grid = $('.filters-wrap').isotope({
   });
   // filter items on button click
   $('.buttons').on( 'click', 'button', function() {
+      console.log("click");
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });

@@ -44,7 +44,7 @@ request.onload = function() {
             let tools = item.tools;
             let languages = item.languages.concat(tools);
                 let allLang = "";
-                item.languages.forEach(item => {
+                languages.forEach(item => {
                     allLang += `<button>${item}</button>`;
                 });
 

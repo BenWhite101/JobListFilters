@@ -46,9 +46,12 @@ request.onload = function() {
             let tools = item.tools;
             let languages = item.languages.concat(tools);
                 let allLang = "";
+                let blockClasses = "";
                 languages.forEach(item => {
                     allLang += `<button>${item}</button>`;
+                    blockClasses += `${item} `;
                 });
+                
 
 
 
@@ -56,7 +59,7 @@ request.onload = function() {
 
              main += 
              `
-                <div class="block ${featuredHtml}">
+                <div class="block ${featuredHtml} ${blockClasses}">
                 <a href="#">
                 <div class="wrap">
 
@@ -105,3 +108,11 @@ request.onload = function() {
   }
 
   
+
+ 
+
+
+  var iso = new Isotope( '.filter-wrap', {
+    itemSelector: '.block',
+    layoutMode: 'fitRows'
+  });

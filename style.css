@@ -82,4 +82,5 @@ body {
 .filters-section .filters-main .filters-wrap .block .wrap .right button:hover {
   color: white;
   background-color: hsl(180, 29%, 50%);
+  cursor: pointer;
 }

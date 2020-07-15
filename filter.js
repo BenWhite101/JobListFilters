@@ -115,24 +115,3 @@ request.onload = function() {
 
 
 
-  
-
-jQuery( document ).ready(function() {
- 
-
-  // init Isotope
-var $grid = jQuery('.filters-wrap').isotope({
-    itemSelector: '.block'
-  });
-  // filter items on button click
-  jQuery('.buttons').on( 'click', 'button', function() {
-      console.log("click");
-    var filterValue = jQuery(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-  });
-
-
-
-
-  
-});
